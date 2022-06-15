@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".NewDonerFragment"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="75dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Donor Information"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/donorName"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="       Enter Your Name"
+            />
+        <EditText
+            android:id="@+id/donorAge"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="       Enter your Age"
+            />
+        <EditText
+            android:id="@+id/donorPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="       Enter your Mobile Number"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Select Your Blood Group"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/bloodSpinner"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/genderRG"
+            android:layout_marginLeft="14dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select your Gender"
+                android:textStyle="bold"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/maleRB"
+                android:text="Male"
+                android:layout_marginLeft="5dp"
+                android:checked="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/femaleRB"
+                android:layout_marginLeft="5dp"
+                android:text="Female" />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="11dp">
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:textColor="@color/black"-->
+<!--                tools:text="Your Date of Birth" />-->
+           <androidx.appcompat.widget.AppCompatButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/btnDOB"
+               android:text="Select date"
+               android:textAllCaps="false"
+               android:layout_weight="1"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/showDateTV"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                 />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"/>
+
+
+
+
+    </LinearLayout>
+</layout>
